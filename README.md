@@ -23,9 +23,8 @@ Simple Quest Announcer est un addon léger et optimisé pour World of Warcraft C
 ## 📦 Installation
 
 1. **Télécharger l'addon** :
-   - **Option 1** : Téléchargez depuis la section [Releases](../../releases) de ce repository
-   - **Option 2** : Cliquez sur le bouton vert "Code" puis "Download ZIP"
-   - **Option 3** : Clonez le repository avec Git :
+   - **Option 1** : Cliquez sur le bouton vert "Code" puis "Download ZIP"
+   - **Option 2** : Clonez le repository avec Git :
      ```bash
      git clone https://github.com/votre-utilisateur/SimpleQuestAnnouncer.git
      ```
@@ -33,11 +32,11 @@ Simple Quest Announcer est un addon léger et optimisé pour World of Warcraft C
 2. **Installer l'addon** :
    - Extrayez le dossier `SimpleQuestAnnouncer` (contenu dans le ZIP) dans votre répertoire d'addons :
      ```
-     World of Warcraft/Interface/AddOns/
+     Wow/Interface/AddOns/
      ```
    - Assurez-vous que le chemin final soit :
      ```
-     World of Warcraft/Interface/AddOns/SimpleQuestAnnouncer/
+     Wow/Interface/AddOns/SimpleQuestAnnouncer/
      ```
 
 3. **Activer l'addon** :
@@ -88,3 +87,22 @@ SQA_Config = {
     language = "AUTO",   -- Langue choisie
     lastObjectives = {}  -- Cache des objectifs de quête
 }
+
+## 🔧 Optimisations Techniques
+Throttling intelligent : Scans adaptés selon l'état de combat
+Silence au démarrage : Aucune annonce pendant 15 secondes après /reload
+Cache nettoyé : Suppression automatique des quêtes terminées
+Compatibilité pfUI : Intégration avec l'UI populaire pfUI
+
+## 🐛 Dépannage
+Problèmes courants :
+Le bouton n'apparaît pas
+Tapez /sqa button pour le recréer
+
+Vérifiez que l'addon est activé
+
+Pas d'annonces
+Vérifiez que l'addon est activé (/sqa on)
+
+Erreurs Lua
+Tapez /console scriptErrors 1 pour voir les erreurs
